@@ -14,8 +14,8 @@ import javax.persistence.*;
 public class Module {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long Id;
-    String Module_code;
-    String Module_name;
-    String Status;
+    private long Id;
+    private String Module_code;
+    private String Module_name;
+    private String Status;
 }

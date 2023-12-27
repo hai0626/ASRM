@@ -14,7 +14,7 @@ import javax.persistence.*;
 public class Comment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long Id;
-    String Content;
-    String User_comment;
+    private long Id;
+    private String Content;
+    private String User_comment;
 }

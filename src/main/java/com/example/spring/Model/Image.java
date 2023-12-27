@@ -14,6 +14,6 @@ import javax.xml.soap.Text;
 public class Image {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long Id;
-    String Data;
+    private long Id;
+    private String Data;
 }

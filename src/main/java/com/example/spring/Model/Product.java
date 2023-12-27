@@ -16,18 +16,18 @@ import java.util.Date;
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long Id;
-    String Product_code;
-    String Product_name;
-    long Territory_code;
-    BigDecimal price;
-    String Decription;
-    long Image_id;
-    long Discout_code;
-    String Status;
-    String Created_by;
-    Date Create_dated;
-    String Last_updated_by;
-    Date Last_updated_dated;
+    private long Id;
+    private String Product_code;
+    private String Product_name;
+    private long Territory_code;
+    private BigDecimal price;
+    private String Decription;
+    private long Image_id;
+    private long Discout_code;
+    private String Status;
+    private String Created_by;
+    private Date Create_dated;
+    private String Last_updated_by;
+    private Date Last_updated_dated;
 
 }

@@ -14,13 +14,13 @@ import java.util.Date;
 public class Department {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long Id;
-    String Department_code;
-    String Department_name;
-    String Status;
-    String Created_by;
-    Date Create_dated;
-    String Last_updated_by;
-    Date Last_updated_dated;
+    private long Id;
+    private String Department_code;
+    private String Department_name;
+    private String Status;
+    private String Created_by;
+    private Date Create_dated;
+    private String Last_updated_by;
+    private Date Last_updated_dated;
 
 }

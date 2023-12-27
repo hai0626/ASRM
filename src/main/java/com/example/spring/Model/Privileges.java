@@ -14,7 +14,7 @@ import javax.persistence.*;
 public class Privileges {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long Role_id;
-    String Module_code;
-    String Access_code;
+    private long Role_id;
+    private String Module_code;
+    private String Access_code;
 }

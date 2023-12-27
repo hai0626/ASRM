@@ -14,13 +14,13 @@ import java.util.Date;
 public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long Id;
-    String Role_code;
-    String Role_name;
-    String Status;
-    String Created_by;
-    Date Create_dated;
-    String Last_updated_by;
-    Date Last_updated_dated;
+    private long Id;
+    private String Role_code;
+    private String Role_name;
+    private String Status;
+    private String Created_by;
+    private Date Create_dated;
+    private String Last_updated_by;
+    private Date Last_updated_dated;
 
 }

@@ -14,7 +14,7 @@ import javax.persistence.*;
 public class Rate {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long Id;
-    long Content;
-    String User_rate;
+    private long Id;
+    private long Content;
+    private String User_rate;
 }

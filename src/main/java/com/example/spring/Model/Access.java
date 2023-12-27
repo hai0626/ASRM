@@ -14,8 +14,8 @@ import javax.persistence.*;
 public class Access {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long Id;
-    String Access_code;
-    String Access_name;
-    String Status;
+    private long Id;
+    private String Access_code;
+    private String Access_name;
+    private String Status;
 }

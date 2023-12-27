@@ -14,7 +14,7 @@ import javax.persistence.*;
 public class Staff_role {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long Role_id;
-    long Staff_id;
-    String Module_code;
+    private long Role_id;
+    private long Staff_id;
+    private String Module_code;
 }

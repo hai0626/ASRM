@@ -21,13 +21,13 @@ import javax.validation.constraints.Size;
 public class Territory {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long Id;
-    String Territory_code;
-    String Territory_name;
-    String Status;
-    String Created_by;
-    Date Create_dated;
-    String Last_updated_by;
-    Date Last_updated_dated;
+    private long Id;
+    private String Territory_code;
+    private String Territory_name;
+    private String Status;
+    private String Created_by;
+    private Date Create_dated;
+    private String Last_updated_by;
+    private Date Last_updated_dated;
 
 }
