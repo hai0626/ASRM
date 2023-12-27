@@ -10,7 +10,7 @@ import java.util.Optional;
 
 @Repository
 public interface StaffRepository extends JpaRepository<Staff,Long> {
-    @Query("SELECT s FROM Staff s WHERE s.Staff_name = :staffname and s.Staff_password = :staffpassword")
-    Staff findStaff(@Param("staffname") String staffname,@Param("staffpassword") String staffpassword);
+    @Query("SELECT s FROM Staff s WHERE s.Staff_id = :staffid and s.Staff_password = :staffpassword")
+    Staff findStaff(@Param("staffid") String staffid,@Param("staffpassword") String staffpassword);
 
 }

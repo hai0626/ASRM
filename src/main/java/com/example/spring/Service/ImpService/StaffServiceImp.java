@@ -17,6 +17,6 @@ public class StaffServiceImp implements StaffService {
 
     @Override
     public Staff Login(StaffDto staffDto) {
-        return staffRepository.findStaff(staffDto.getStaffName(),staffDto.getStaffPassword());
+        return staffRepository.findStaff(staffDto.getStaffId(),staffDto.getStaffPassword());
     }
 }

@@ -15,7 +15,8 @@ import java.util.Date;
 public class Staff {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long StaffId;
+    private long id;
+    private String Staff_id;
     private String Staff_name;
     private String Department_id;
     private String Territory_code;
