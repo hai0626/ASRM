@@ -9,4 +9,5 @@ import java.util.Optional;
 @Service
 public interface StaffService {
     Staff Login(StaffDto staffDto);
+    Optional<Staff>  findStaffbyStaffId(String staffId);
 }

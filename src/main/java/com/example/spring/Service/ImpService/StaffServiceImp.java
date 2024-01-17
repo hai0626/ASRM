@@ -19,4 +19,11 @@ public class StaffServiceImp implements StaffService {
     public Staff Login(StaffDto staffDto) {
         return staffRepository.findStaff(staffDto.getStaffId(),staffDto.getStaffPassword());
     }
+
+    @Override
+    public Optional<Staff>  findStaffbyStaffId(String staffId) {
+        return staffRepository.findStaffbyStaffId(staffId);
+    }
+
+
 }

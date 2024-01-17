@@ -23,4 +23,5 @@ public class Role {
     private String Last_updated_by;
     private Date Last_updated_dated;
 
+
 }
