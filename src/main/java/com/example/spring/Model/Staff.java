@@ -25,6 +25,7 @@ public class Staff {
     private String Staff_password;
     private Date Last_login;
     private String Status;
+    private int Attempt;
     private String Created_by;
     private Date Create_dated;
     private String Last_updated_by;

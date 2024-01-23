@@ -8,6 +8,7 @@ import java.util.Map;
 @Component
 public class AccountLockService {
     private static final int MAX_ATTEMPTS = 3;
+    private static int ATTEMPTS = 1;
 
     private Map<String, Integer> lockedAccounts = new HashMap<>();
 
@@ -16,7 +17,8 @@ public class AccountLockService {
     }
 
     public void lockAccount(String username) {
-        lockedAccounts.put(username, MAX_ATTEMPTS + 1);
+        lockedAccounts.put(username, ATTEMPTS + 1);
+        System.out.println(lockedAccounts);
     }
 
     public void unlockAccount(String username) {
