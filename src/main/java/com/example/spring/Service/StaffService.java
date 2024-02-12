@@ -1,14 +1,12 @@
 package com.example.spring.Service;
 
-import com.example.spring.Dto.StaffDto;
-import com.example.spring.Model.Staff;
+import com.example.spring.Dto.StaffLoginDto;
+import com.example.spring.Entities.Staff;
 import org.springframework.stereotype.Service;
-
-import java.util.Optional;
 
 @Service
 public interface StaffService {
-    Staff Login(StaffDto staffDto);
+    Staff Login(Staff staff);
     Staff  findStaffbyStaffId(String staffId);
     Staff Save(Staff staff);
 }

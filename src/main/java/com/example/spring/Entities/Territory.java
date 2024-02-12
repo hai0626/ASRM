@@ -1,4 +1,4 @@
-package com.example.spring.Model;
+package com.example.spring.Entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -6,12 +6,6 @@ import lombok.NoArgsConstructor;
 
 import java.util.Date;
 import javax.persistence.*;
-import javax.validation.constraints.DecimalMin;
-import javax.validation.constraints.Digits;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Pattern;
-import javax.validation.constraints.Size;
 
 @Data
 @AllArgsConstructor

@@ -1,14 +1,11 @@
 package com.example.spring.Service.ImpService;
 
-import com.example.spring.Dto.StaffDto;
-import com.example.spring.Model.Staff;
+import com.example.spring.Dto.StaffLoginDto;
+import com.example.spring.Entities.Staff;
 import com.example.spring.Repository.StaffRepository;
 import com.example.spring.Service.StaffService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
-
-import java.util.Optional;
 
 @Component
 public class StaffServiceImp implements StaffService {
@@ -16,8 +13,8 @@ public class StaffServiceImp implements StaffService {
     private StaffRepository staffRepository;
 
     @Override
-    public Staff Login(StaffDto staffDto) {
-        return staffRepository.findStaff(staffDto.getStaffId(),staffDto.getStaffPassword());
+    public Staff Login(Staff staff) {
+        return staffRepository.findStaff(staff.getStaff_id(),staff.getStaff_password());
     }
 
     @Override
