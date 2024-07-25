@@ -1,25 +1,26 @@
-package com.example.spring.Dto;
+package com.example.spring.Entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.*;
 import java.util.Date;
-
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
-public class StaffDto {
-    private long id;
-    private String Staff_id;
-    private String Staff_name;
-    private String Department_id;
-    private String Territory_code;
-    private String Staff_password;
-    private Date Last_login;
+@Entity
+@Table(name = "Department")
+public class Department {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long Id;
+    private String Department_code;
+    private String Department_name;
     private String Status;
     private String Created_by;
     private Date Create_dated;
     private String Last_updated_by;
     private Date Last_updated_dated;
+
 }
