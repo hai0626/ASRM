@@ -30,12 +30,12 @@ public class Staff {
     private Date Create_dated;
     private String Last_updated_by;
     private Date Last_updated_dated;
-    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-    @JoinTable(
-            name = "staffs_roles",
-            joinColumns = @JoinColumn(name = "staff_id"),
-            inverseJoinColumns = @JoinColumn(name = "role_code")
-    )
-    private Set<Role> roles = new HashSet<>();
+//    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+//    @JoinTable(
+//            name = "staffs_roles",
+//            joinColumns = @JoinColumn(name = "staff_id"),
+//            inverseJoinColumns = @JoinColumn(name = "role_code")
+//    )
+//    private Set<Role> roles = new HashSet<>();
 
 }

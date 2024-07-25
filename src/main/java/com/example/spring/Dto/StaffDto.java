@@ -10,6 +10,7 @@ import java.util.Date;
 @NoArgsConstructor
 @Data
 public class StaffDto {
+    private long id;
     private String Staff_id;
     private String Staff_name;
     private String Department_id;
